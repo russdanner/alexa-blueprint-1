@@ -1,4 +1,5 @@
-<#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#import "/templates/system/common/ice.ftl" as studio />
+
 <#assign "interactionModelJson">
     <iframe src="/static-assets/app/interaction-model.json"></iframe>
 </#assign>
@@ -14,6 +15,6 @@
 	</head>
 	<body>
 	${contentModel.content_html?replace("[INTERACTION_JSON]", interactionModelJson)}
-	<@studio.toolSupport/>
+	<@studio.initPageBuilder/>
 	</body>
 </html>
