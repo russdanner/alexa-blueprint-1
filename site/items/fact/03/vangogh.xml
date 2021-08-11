@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/fact</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>64f4108f</objectGroupId>
+	<objectId>64f4108f-6b43-4008-9efe-ad7557ee3e42</objectId>
+	<file-name>vangogh.xml</file-name>
+	<folder-name/>
+	<internal-name>Van Gogh Birthday</internal-name>
+	<factYear_s>1853</factYear_s>
+	<factMonth_s>3</factMonth_s>
+	<factDay_s>30</factDay_s>
+	<facts_o item-list="true">	<item>	<fact_t>The 1st website was created.</fact_t>
+	<detail_t>The beginning of the Web as a publicly available service on the Internet arrived on August 6, 1991, when Berners-Lee published the first-ever website. Fittingly, the site was about the World Wide Web project, describing the Web and how to use it. Hosted at CERN on Berners-Lee’s NeXT computer, the site’s URL was http://info.cern.ch.</detail_t>
+	<fact_html>&lt;p&gt;Vincent Van Gogh was born&lt;/p&gt;</fact_html>
+	<detail_html>&lt;p&gt;&lt;span&gt;Vincent Van Gogh was born in Groot Zundert, Holland. He was a Postimpressionist painter, generally considered the greatest Dutch painter after Rembrandt. During his short painting career he produced over 800 oil paintings and 700 drawings, but sold only one during his lifetime. In 1987, the sale of his painting&amp;nbsp;&lt;/span&gt;&lt;i&gt;Irises&lt;/i&gt;&lt;span&gt;&amp;nbsp;brought 53.9 million dollars, the highest price ever paid for a work of art up to that time. During his life, Van Gogh suffered from despair and bouts of mental illness, at one point cutting off part of his own left ear. He committed suicide in 1890 by gunshot.&lt;/span&gt;&lt;/p&gt;</detail_html>
+	</item></facts_o>
+	<createdDate>2020-08-26T03:57:16.563Z</createdDate>
+	<createdDate_dt>2020-08-26T03:57:16.563Z</createdDate_dt>
+	<lastModifiedDate>2021-08-09T20:18:56.373Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-09T20:18:56.373Z</lastModifiedDate_dt>
+</component>

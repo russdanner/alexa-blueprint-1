@@ -1,6 +1,6 @@
-<content-type name="/page/entry" is-wcm-type="true">
-	<label>Page: Entry</label>
-	<form>/page/entry</form>
+<content-type name="/page/generic" is-wcm-type="true">
+	<label>Generic Page</label>
+	<form>/page/generic</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>
 	<file-extension>xml</file-extension>
@@ -12,7 +12,7 @@
 	<image-thumbnail></image-thumbnail>
 	<paths>
 		<includes>
-			<pattern>^HIDDEN</pattern>
+			<pattern>/site/website/.*</pattern>
 		</includes>
 	</paths>
 </content-type>

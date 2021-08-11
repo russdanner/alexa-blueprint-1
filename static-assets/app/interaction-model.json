@@ -1,0 +1,75 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my crafter",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Learn",
+                    "slots": [
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "value",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "what happened on {Date} in history",
+                        "what happened on {Date}"
+                    ]
+                },
+                {
+                    "name": "Search",
+                    "slots": [
+                        {
+                            "name": "value",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "tell me details about {value}",
+                        "enlighten me on {value}",
+                        "tell me about {value}",
+                        "tell me more about {value}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/fact</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>552f6ff9</objectGroupId>
+	<objectId>552f6ff9-2c82-40a2-9c96-b3f35ee73c2f</objectId>
+	<file-name>universaltime.xml</file-name>
+	<folder-name/>
+	<internal-name>Universal Time Established</internal-name>
+	<factYear_s>1884</factYear_s>
+	<factMonth_s>10</factMonth_s>
+	<factDay_s>13</factDay_s>
+	<facts_o item-list="true">	<item>	<fact_t>The 1st website was created.</fact_t>
+	<detail_t>The beginning of the Web as a publicly available service on the Internet arrived on August 6, 1991, when Berners-Lee published the first-ever website. Fittingly, the site was about the World Wide Web project, describing the Web and how to use it. Hosted at CERN on Berners-Lee’s NeXT computer, the site’s URL was http://info.cern.ch.</detail_t>
+	<fact_html>&lt;p&gt;Greenwich was established as +0 Universal Time.&lt;/p&gt;</fact_html>
+	<detail_html>&lt;p&gt;Greenwich was established as the universal time from which standard times throughout the world are calculated.&amp;nbsp;British railway companies started introducing a single standard&amp;nbsp;time&amp;nbsp;across their networks, designed to&amp;nbsp;make&amp;nbsp;their timetables less confusing. In a congregation of 25 nations in Washington DC on this day, they decided to make Greenwich at 0 degrees latitude. Furthermore, this led to Greenwich being the international standard from where times would be calculated.&lt;br /&gt;&lt;/p&gt;</detail_html>
+	</item></facts_o>
+	<createdDate>2020-08-26T03:57:16.563Z</createdDate>
+	<createdDate_dt>2020-08-26T03:57:16.563Z</createdDate_dt>
+	<lastModifiedDate>2021-08-09T19:55:45.583Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-09T19:55:45.583Z</lastModifiedDate_dt>
+</component>

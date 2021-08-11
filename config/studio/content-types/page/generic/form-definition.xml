@@ -1,15 +1,15 @@
 <form>
-	<title>Page: Entry</title>
+	<title>Generic Page</title>
 	<description></description>
 	<objectType>page</objectType>
-	<content-type>/page/entry</content-type>
+	<content-type>/page/generic</content-type>
 	<imageThumbnail>undefined</imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value>/templates/web/page-entry.ftl</value>
+			<value>/templates/web/page-generic.ftl</value>
 			<type>template</type>
 		</property>
 		<property>
@@ -26,7 +26,7 @@
 		</property>
 	</properties>
 	<sections>		<section>
-			<title>Page: Entry Properties</title>
+			<title>Generic Properties</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
@@ -76,21 +76,6 @@
 							<name>maxlength</name>
 							<value>50</value>
 							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
@@ -143,20 +128,83 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>rte-tinymce5</type>
+					<id>content_html</id>
+					<iceId></iceId>
+					<title>Content</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
 						<property>
-							<name>readonly</name>
+							<name>width</name>
+							<value>900</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>height</name>
+							<value>600</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>autoGrow</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSpellCheck</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceRootBlockPTag</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forcePTags</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceBRTags</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>supportedChannels</name>
 							<value></value>
-							<type>boolean</type>
+							<type>supportedChannels</type>
 						</property>
 						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
+							<name>rteConfiguration</name>
+							<value>generic</value>
+							<type>string</type>
 						</property>
 						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
+							<name>imageManager</name>
+							<value>upload</value>
+							<type>datasource:image</type>
+						</property>
+						<property>
+							<name>videoManager</name>
+							<value></value>
+							<type>datasource:video</type>
+						</property>
+						<property>
+							<name>fileManager</name>
+							<value></value>
+							<type>datasource:item</type>
 						</property>
 					</properties>
 					<constraints>
@@ -170,5 +218,18 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>	</datasources>
+	<datasources>				<datasource>
+					<type>img-desktop-upload</type>
+					<id>upload</id>
+					<title>Upload</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/pages/images</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+	</datasources>
 </form>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/fact</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>aeaea7bb</objectGroupId>
+	<objectId>aeaea7bb-93a8-401e-ab69-cbd0a962e884</objectId>
+	<file-name>rio.xml</file-name>
+	<folder-name/>
+	<internal-name>Rio de Janeiro</internal-name>
+	<factYear_s>1502</factYear_s>
+	<factMonth_s>1</factMonth_s>
+	<factDay_s>1</factDay_s>
+	<facts_o item-list="true">	<item>	<fact_t>The 1st website was created.</fact_t>
+	<detail_t>The beginning of the Web as a publicly available service on the Internet arrived on August 6, 1991, when Berners-Lee published the first-ever website. Fittingly, the site was about the World Wide Web project, describing the Web and how to use it. Hosted at CERN on Berners-Lee’s NeXT computer, the site’s URL was http://info.cern.ch.</detail_t>
+	<fact_html>&lt;p&gt;Rio de Janeiro was formed.&lt;/p&gt;</fact_html>
+	<detail_html>&lt;p&gt;&lt;span&gt;Portuguese explorers landed at Guanabara Bay on the coast of South America and named it Rio de Janeiro, which in fact means River of January. Rio de Janeiro is currently Brazil&amp;#39;s second largest city.&lt;/span&gt;&lt;/p&gt;</detail_html>
+	</item></facts_o>
+	<createdDate>2020-08-26T03:57:16.563Z</createdDate>
+	<createdDate_dt>2020-08-26T03:57:16.563Z</createdDate_dt>
+	<lastModifiedDate>2021-08-09T20:23:02.319Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-09T20:23:02.319Z</lastModifiedDate_dt>
+</component>

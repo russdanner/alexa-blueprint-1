@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/generic</content-type>
+	<display-template>/templates/web/page-generic.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<placeInNav>false</placeInNav>
+	<file-name>index.xml</file-name>
+	<internal-name>Setup Documentation</internal-name>
+	<orderDefault_f>-1</orderDefault_f>
+	<objectGroupId>8d7f</objectGroupId>
+	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
+	<folder-name>docs</folder-name>
+	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
+	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
+	<lastModifiedDate>2021-05-14T16:42:55.939Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-05-14T16:42:55.939Z</lastModifiedDate_dt>
+	<navLabel>Setup Documentation</navLabel>
+	<content_html>&lt;p&gt;Using the JSON editor add the following interaction to your Alexa Skill&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/static-assets/pages/images/json-editor.png" alt="" width="664" height="396" /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[INTERACTION_JSON]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once added, click Save Model and then Build Model&lt;/p&gt;
+&lt;p&gt;After the model has been successfully built you can use the test tag to begin testing your skill&lt;/p&gt;</content_html>
+</page>

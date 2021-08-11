@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/fact</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>6680</objectGroupId>
+	<objectId>668016a8-9f17-25c0-7065-0725178b4b78</objectId>
+	<file-name>us-declaration-of-independence.xml</file-name>
+	<folder-name/>
+	<internal-name>US Declaration of Independence</internal-name>
+	<facts_o item-list="true">	<item>	<fact_t>US Declares Independence.</fact_t>
+	<detail_t>Declaration of Independence, in U.S. history, document that was approved by the Continental Congress on July 4, 1776, and that announced the separation of 13 North American British colonies from Great Britain. It explained why the Congress on July 2 “unanimously” by the votes of 12 colonies (with New York abstaining) had resolved that “these United Colonies are, and of right ought to be Free and Independent States.” Accordingly, the day on which final separation was officially voted was July 2, although the 4th, the day on which the Declaration of Independence was adopted, has always been celebrated in the United States as the great national holiday—the Fourth of July, or Independence Day.</detail_t>
+	<fact_html>Independence Day USA</fact_html>
+	<detail_html>&lt;p&gt;Independence Day, also called Fourth of July or July 4th, in the United States, the annual celebration of nationhood. It commemorates the passage of the Declaration of Independence by the Continental Congress on July 4, 1776. Independence Day is celebrated on Sunday, July 4, 2021 in the United States.&lt;/p&gt;</detail_html>
+	</item></facts_o>
+	<createdDate>2020-07-30T14:11:52.568Z</createdDate>
+	<createdDate_dt>2020-07-30T14:11:52.568Z</createdDate_dt>
+	<lastModifiedDate>2021-08-09T18:43:43.282Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-09T18:43:43.282Z</lastModifiedDate_dt>
+	<factMonth_s>7</factMonth_s>
+	<factDay_s>4</factDay_s>
+	<factYear_s>1776</factYear_s>
+</component>

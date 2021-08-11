@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/fact</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>4e97dddf</objectGroupId>
+	<objectId>4e97dddf-d459-497b-aad3-b186ed23397c</objectId>
+	<file-name>olympics.xml</file-name>
+	<folder-name/>
+	<internal-name>First Modern Olympics</internal-name>
+	<factYear_s>1896</factYear_s>
+	<factMonth_s>4</factMonth_s>
+	<factDay_s>6</factDay_s>
+	<facts_o item-list="true">	<item>	<fact_t>The 1st website was created.</fact_t>
+	<detail_t>The beginning of the Web as a publicly available service on the Internet arrived on August 6, 1991, when Berners-Lee published the first-ever website. Fittingly, the site was about the World Wide Web project, describing the Web and how to use it. Hosted at CERN on Berners-Lee’s NeXT computer, the site’s URL was http://info.cern.ch.</detail_t>
+	<fact_html>&lt;p&gt;First Modern Olympics.&lt;/p&gt;</fact_html>
+	<detail_html>&lt;p&gt;&lt;span&gt;After a break of 1500 years, the first Olympics of the modern era was held in Athens, Greece.&lt;/span&gt;&lt;/p&gt;</detail_html>
+	</item></facts_o>
+	<createdDate>2020-08-26T03:57:16.563Z</createdDate>
+	<createdDate_dt>2020-08-26T03:57:16.563Z</createdDate_dt>
+	<lastModifiedDate>2021-08-09T20:10:47.266Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-09T20:10:47.266Z</lastModifiedDate_dt>
+</component>
