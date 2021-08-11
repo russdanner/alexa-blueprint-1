@@ -94,8 +94,8 @@
         Items that match the paths specified will be grouped together in the dashboard widget
         -->
         <folders>
+            <folder name="Facts" path="/site/items/fact" read-direct-children="false" attach-root-prefix="true"/>
             <folder name="Pages" path="/website" read-direct-children="false" attach-root-prefix="true"/>
-            <folder name="Facts" path="/site/fact" read-direct-children="false" attach-root-prefix="true"/>
             <folder name="Components" path="/components" read-direct-children="false" attach-root-prefix="true"/>
             <folder name="Assets" path="/static-assets" read-direct-children="false" attach-root-prefix="false"/>
             <folder name="Templates" path="/templates" read-direct-children="false" attach-root-prefix="false"/>
