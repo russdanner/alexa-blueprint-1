@@ -13,21 +13,40 @@
 	<folder-name>docs</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-08-11T19:38:20.531Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-11T19:38:20.531Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-08-11T19:49:56.452Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-11T19:49:56.452Z</lastModifiedDate_dt>
 	<navLabel>Setup Documentation</navLabel>
-	<content_html>&lt;h1&gt;&lt;strong&gt;Alexa Blueprint&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;This blueprint is intended to show a use case of Crafter CMS with Alexa. &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h2&gt;
+	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Alexa Blueprint&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;This blueprint is intended to show a use case of Crafter CMS with Alexa.&lt;/span&gt;&lt;/p&gt;
+&lt;div class="mce-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nns8"&gt;Alexa Blueprint&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nns9"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnsa"&gt;Set up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnsb"&gt;Alexa Developer Console&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnsc"&gt;Replicate by copying Json&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnsd"&gt;Building Your Skill and Using the Alexa Fact Skill&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnse"&gt;REST Script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnsf"&gt;Limitations and ability to expand in production&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="mcetoc_1fcrc7nns9"&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li style="font-weight: 400;" aria-level="1"&gt;&lt;span style="font-weight: 400;"&gt;Must set up company account on Alexa Developer Console (&lt;a href="https://developer.amazon.com/alexa/console/ask" target="_blank" rel="noopener"&gt;https://developer.amazon.com/alexa/console/ask&lt;/a&gt;)&lt;/span&gt;&lt;/li&gt;
 &lt;li style="font-weight: 400;" aria-level="1"&gt;&lt;span style="font-weight: 400;"&gt;Must be able to post to an &lt;strong&gt;HTTPS&lt;/strong&gt; address&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;strong&gt;Set up&lt;/strong&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;strong&gt;Alexa Developer Console&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id="mcetoc_1fcrc7nnsa"&gt;&lt;strong&gt;Set up&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id="mcetoc_1fcrc7nnsb"&gt;&lt;strong&gt;Alexa Developer Console&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;In order to configure this Blueprint, you can either copy the Json from below or manually create the skill from scratch yourself. &lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style="font-weight: 400;"&gt;To learn more about skills refer to the Alexa Developer Console docs here:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html"&gt;&lt;span style="font-weight: 400;"&gt;https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;Replicate by copying Json&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id="mcetoc_1fcrc7nnsc"&gt;&lt;strong&gt;Replicate by copying Json&lt;/strong&gt;&lt;/h3&gt;
 &lt;h4&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;In the Alexa Developer Console (&lt;a href="https://developer.amazon.com/alexa/console/ask"&gt;https://developer.amazon.com/alexa/console/ask&lt;/a&gt;), you should log in with a corporate account. If you don&amp;rsquo;t have one, setting it up is simple. Just enter the information required on the sign up page.&lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/h4&gt;
@@ -47,7 +66,7 @@
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;You should get a notification like this when finished.&lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;Step 7&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Navigate to the Test option on the top banner and on the dropdown next to &amp;ldquo;Test is disabled for this skill&amp;rdquo;, select Development and you should be free to test your skill.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;Building Your Skill and Using the Alexa Fact Skill&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id="mcetoc_1fcrc7nnsd"&gt;&lt;strong&gt;Building Your Skill and Using the Alexa Fact Skill&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;After importing the interaction module for your skill, the final step is to build the model which should be as simple as navigating back to Custom and selecting number 3 in the list on the right side of the screen. It should take a few moments to complete the build.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Moving on the to Test selection on the upper banner, select Development in the only dropdown menu on the page. You should be able to begin a dialogue looking something like this:&lt;/span&gt;&lt;/p&gt;
@@ -57,9 +76,9 @@
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Alexa tell {invocation name} to {intent utterance}&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;The invocation name in this Blueprint is &amp;ldquo;my crafter&amp;rdquo; and an example utterance would be &amp;ldquo;tell me what happened on {Date}&amp;rdquo;. Once a session, or conversation, is started, there is no need to re-invoke the skill. You can continue with only intent utterances until the dialogue is finished.&lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;REST Script&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id="mcetoc_1fcrc7nnse"&gt;&lt;strong&gt;REST Script&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;In order to handle the request sent by Alexa, usage of a REST script is necessary. The request Alexa sends over is in JSON format, and the response should be in such format as well. To learn more about REST Scripts, refer here: &lt;/span&gt;&lt;a href="https://docs.craftercms.org/en/3.1/developers/projects/engine/api/groovy-api.html"&gt;&lt;span style="font-weight: 400;"&gt;https://docs.craftercms.org/en/3.1/developers/projects/engine/api/groovy-api.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;Limitations and ability to expand in production&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id="mcetoc_1fcrc7nnsf"&gt;&lt;strong&gt;Limitations and ability to expand in production&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Currently, this blueprint uses system memory to store temporary data from the request sent by Alexa. This design can lead to potential problems in a production setting with many servers. Alexa could send a secondary request to a different server from the original request and session. A solution to this would be to utilize Redis. Redis is a fast key-value storage system that allows you to cache data and access it extremely quickly.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Amazon&amp;rsquo;s Elasticache for Redis is a caching system that combines the speed of Redis with the availability and scalability of Amazon&amp;rsquo;s servers. You can read more about Elasticache and Redis here: &lt;/span&gt;&lt;a href="https://aws.amazon.com/elasticache/redis/?ch=ns&amp;amp;loc=1"&gt;&lt;span style="font-weight: 400;"&gt;https://aws.amazon.com/elasticache/redis/?ch=ns&amp;amp;loc=1&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content_html>
 </page>
