@@ -25,11 +25,26 @@
             <widget id="craftercms.components.Dashboard" />
           </configuration>
         </widget>
+        
+        
+        
         <widget id="craftercms.components.ToolsPanelPageButton">
           <configuration>
             <title id="previewSiteExplorerPanel.title" defaultMessage="Site Explorer" />
             <icon id="craftercms.icons.SiteExplorer"/>
             <widgets>
+
+              <widget id="craftercms.components.PathNavigator">
+                <configuration>
+                  <id>Facts</id>
+                  <label>Facts</label>
+                  <icon id="craftercms.icons.Component" />
+                  <rootPath>/site/items/fact</rootPath>
+                  <locale>en</locale>
+                </configuration>
+              </widget>        
+        
+        
               <widget id="craftercms.components.PathNavigator">
                 <configuration>
                   <id>Pages</id>
@@ -39,15 +54,8 @@
                   <locale>en</locale>
                 </configuration>
               </widget>
-              <widget id="craftercms.components.PathNavigator">
-                <configuration>
-                  <id>Components</id>
-                  <label>Components</label>
-                  <icon id="craftercms.icons.Component" />
-                  <rootPath>/site/components</rootPath>
-                  <locale>en</locale>
-                </configuration>
-              </widget>
+        
+        
               <widget id="craftercms.components.PathNavigator">
                 <configuration>
                   <id>StaticAssets</id>
