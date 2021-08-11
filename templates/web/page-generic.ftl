@@ -1,7 +1,7 @@
 <#import "/templates/system/common/ice.ftl" as studio />
 
 <#assign "interactionModelJson">
-    <iframe src="/static-assets/app/interaction-model.json"></iframe>
+    <iframe src="/static-assets/app/interaction-model.json" width="80%"></iframe>
 </#assign>
 
 <html lang="en">
