@@ -329,7 +329,7 @@
 													tds[i].className = eventstyles[oddstyles.length - 1] ;
 												}
 											}
-										}
+										} 
 									}
 								}
 			]]>
