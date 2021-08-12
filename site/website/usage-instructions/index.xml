@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/generic</content-type>
+	<display-template>/templates/web/page-generic.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>7415</objectGroupId>
+	<objectId>7415de1d-81c9-a525-926f-0a30e2babde4</objectId>
+	<internal-name>Usage Instruction</internal-name>
+	<navLabel>Usage Instruction</navLabel>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<file-name>index.xml</file-name>
+	<folder-name>usage-instructions</folder-name>
+	<content_html>&lt;p&gt;Usage Instruction&lt;/p&gt;</content_html>
+	<createdDate>2021-08-12T21:38:52.903Z</createdDate>
+	<createdDate_dt>2021-08-12T21:38:52.903Z</createdDate_dt>
+	<lastModifiedDate>2021-08-12T21:38:52.903Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-12T21:38:52.903Z</lastModifiedDate_dt>
+</page>
