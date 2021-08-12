@@ -3,20 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>${model.title_s}</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<style>
-			[v-cloak] { display:none; }
-		</style>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <#import "/templates/web/common/head.ftl" />
 	</head>
 	<body>
 		<div id="browser" class="container" v-cloak>
 			<div class="row">
-				<div class="page-header">
-					<h1>Headless Blog <small><span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#help-modal"/></small></h1>
-				</div>
+				<#import "/templates/web/common/header.ftl" />
 				<div class="col-md-2">
 					<div class="panel panel-default">
 						<div class="panel-heading"><h2 class="panel-title">Items</h2></div>
@@ -124,8 +116,7 @@
 				}
 			});
 		</script>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<#import "/templates/web/common/scripts.ftl" />
 		<@studio.toolSupport/>
 	</body>
 </html>
