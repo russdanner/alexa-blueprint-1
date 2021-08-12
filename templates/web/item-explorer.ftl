@@ -6,9 +6,10 @@
         <#include  "/templates/web/common/head.ftl" />
 	</head>
 	<body>
-		<div id="browser" class="container" v-cloak>
+		<#include  "/templates/web/common/header.ftl" />
+
+		<div id="browser" class="container">
 			<div class="row">
-				<#include  "/templates/web/common/header.ftl" />
 				<div class="col-md-2">
 					<div class="panel panel-default">
 						<div class="panel-heading"><h2 class="panel-title">Items</h2></div>
@@ -61,21 +62,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="help-modal" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title">Help</h4>
-					</div>
-					<div class="modal-body">
-						${model.body_html}
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="https://unpkg.com/vue"></script>
-		<script src="https://unpkg.com/vue-resource"></script>
+        <#include "/templates/web/common/help-modal.ftl" />        
+
+
 		<script>
 			var browser = new Vue({
 				el: '#browser',

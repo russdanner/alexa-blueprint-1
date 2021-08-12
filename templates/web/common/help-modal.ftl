@@ -6,7 +6,7 @@
                 <h4 class="modal-title">Help</h4>
             </div>
             <div class="modal-body">
-                ${contentModel.content_html}
+            The Alexa Fact Skill Blueprint is an example of a simple headless content project that backs an Alexa Skill.
             </div>
         </div>
     </div>
