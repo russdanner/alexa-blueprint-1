@@ -3,57 +3,67 @@ import org.alexa.*
 import java.io.*
 
 def slurper = new JsonSlurper()
-def requestBody = request.reader.text
-System.out.println("Request from Alexa: " + requestBody)
-
-def item 
-def parsedReq = slurper.parseText(requestBody)
-def date = "foo"
-def reqText = "unset"
-def ses
-def alexaResponse = "<speak>"
-def endSession
+def alexaResponse = "<speak>Unset</speak>"
+def endSession = false
 def searchHelper = new SearchHelper(elasticsearch)
 def fact = new Fact(searchHelper)
 
+def requestBody = request.reader.text
+logger.debug("Request from Alexa: " + requestBody)
+
+def parsedReq = slurper.parseText(requestBody)
+
+def session = parsedReq.session.sessionId
+def intent = parsedReq.request.intent.name
+def date =  null
+def term = null
+
+if(intent.equals("Learn")) {
+    date = parsedReq.request.intent.slots.Date.value
+}
+
+if(intent.equals("Search")) {
+    term = parsedReq.request.intent.slots.value.value
+}
 
 
 //retrieving facts
-if(!parsedReq.request.intent.slots.equals(null)) {
-    if(parsedReq.request.intent.slots.Date) {
-     try {
-        date = parsedReq.request.intent.slots.Date.value.replaceAll("-", "/")
-        ses = parsedReq.session.sessionId
-        alexaResponse = fact.getFacts(siteItemService, ses, date, null)
-     } catch (err) {
+if(date != "null") {
+    try {
+        date = date.replaceAll("-", "/")
+        alexaResponse = fact.getFacts(siteItemService, session, date, null)
+    } catch (err) {
         logger.info("We broke. This is the error: " + err)
         alexaResponse = "<speak>There was an error with the request</speak>"
-     }
-    } 
-    
-    if (parsedReq.request.intent.slots.Search) {
-        try {
-            reqText = parsedReq.request.intent.slots.Search.value.toLowerCase()
-            ses = parsedReq.session.sessionId
-            alexaResponse = fact.getFactDetailsByMap(ses, reqText)
-        } catch (err) {
-            logger.info("We broke. This is the error: " + err)
-            alexaResponse = "<speak>There was an error with the request</speak>"
-        }
     }
-}
-
-if(parsedReq.request.intent.name.equals("AMAZON.NoIntent")) {
-    alexaResponse = "Goodbye! </speak>"
+} 
+    
+if(intent.equals("Search")) {
+    try {
+         reqText = params.q.replaceAll("_", " ")
+         if(fact.sessionMap){
+            alexaResponse = fact.getFactDetailsByMap(session, reqText)
+         } else {
+            alexaResponse = fact.getFacts(siteItemService, session, null, reqText)
+         }
+    } catch (err) {
+         logger.info("We broke. This is the error: " + err)
+         alexaResponse = "<speak>There was an error with the request</speak>"
+    }
     endSession = true
 }
 
-if(parsedReq.request.intent.name.equals("AMAZON.YesIntent")) {
-    alexaResponse = fact.getFactDetailsByYes(parsedReq.session.sessionId)
-    endSession = false
+if(intent.equals("AMAZON.NoIntent")) {
+    alexaResponse = "<speak>Goodbye!</speak>"
+    endSession = true
 }
 
-return [
+if(intent.equals("AMAZON.YesIntent")) {
+    alexaResponse = fact.getFactDetailsByYes(session)
+    endSession = true
+}
+
+def alexaResult = [
   "version": "1.0",
   "response": [
     "outputSpeech": [
@@ -63,9 +73,11 @@ return [
     "reprompt": [
       "outputSpeech": [
         "type": "SSML",
-        "ssml": "<speak><break time=\"2s\"/>Can I help you with anything else?</speak>"
+        "ssml": "<speak>Can I help you with anything else?</speak>"
       ]
     ],
     "shouldEndSession": endSession
   ]
 ]
+
+return alexaResult

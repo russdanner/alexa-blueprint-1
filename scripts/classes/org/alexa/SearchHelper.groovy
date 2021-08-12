@@ -70,8 +70,7 @@ class SearchHelper {
 
             hits.each { hit ->
                 def doc = hit.getSourceAsMap()
-                if(doc.facts_o && doc.facts_o.item && doc.facts_o.item.size() > 2) {
-                     
+                if(doc.facts_o && doc.facts_o.item && doc.facts_o.item.size() > 2) {     
 
                     try {
                         def fact = [:]
@@ -101,8 +100,8 @@ class SearchHelper {
                 } 
                 else {
                     def fact = [:]
-                    fact.put("title", "c")//doc.facts_o.item.fact_html_raw)
-                    fact.put("detail", "d")//doc.facts_o.item.detail_html)
+                    fact.put("title", doc.facts_o.item.fact_html_raw)
+                    fact.put("detail", doc.facts_o.item.detail_html)
                     facts << fact  
                 }
                 
