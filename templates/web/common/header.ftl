@@ -14,7 +14,9 @@
           Documentation
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
           <a class="dropdown-item" href="/setup-instructions">Setup</a>
+
           <a class="dropdown-item" href="/usage-instructions">Usage</a>
         </div>
       </li>
