@@ -12,7 +12,7 @@
 			<div class="row">
 				<div class="col-md-2">
 					<div class="panel panel-default">
-						<div class="panel-heading"><h2 class="panel-title">Items</h2></div>
+						<div class="panel-heading"><h2 class="panel-title">Month</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
 								<a href="#" class="list-group-item" v-for="type in types" v-on:click="setType(type)">{{ type.label }}<span v-if="type == selectedType" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span></a>
@@ -71,14 +71,14 @@
 				data: {
 					types: [
 						{
-							label: 'Authors',
+							label: 'Months',
 							labelField: 'name',
-							listUrl: '/api/1/author/list.json'
+							listUrl: '/api/app/month.json'
 						},
 						{
-							label: 'Posts',
+							label: 'Facts',
 							labelField: 'title',
-							listUrl: '/api/1/post/list.json'
+							listUrl: '/api/app/fact.json'
 						}
 					],
 					selectedType: null,
