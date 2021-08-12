@@ -6,16 +6,16 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<placeInNav>false</placeInNav>
 	<file-name>index.xml</file-name>
-	<internal-name>Setup Documentation</internal-name>
+	<internal-name>Setup Instructions</internal-name>
 	<orderDefault_f>-1</orderDefault_f>
 	<objectGroupId>8d7f</objectGroupId>
 	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
-	<folder-name>docs</folder-name>
+	<folder-name>setup-instructions</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-08-12T21:50:10.717Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-12T21:50:10.717Z</lastModifiedDate_dt>
-	<navLabel>Setup Documentation</navLabel>
+	<lastModifiedDate>2021-08-12T22:25:34.360Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-12T22:25:34.360Z</lastModifiedDate_dt>
+	<navLabel>Setup Instructions</navLabel>
 	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Alexa Fact Skill Setup&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;This blueprint is intended to show a use case of Crafter CMS with Alexa.&lt;/span&gt;&lt;/p&gt;
 &lt;div class="mce-toc"&gt;
