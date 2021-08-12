@@ -6,40 +6,42 @@ descriptorVersion: 2
 # Describe the plugin
 plugin:
   type: blueprint
-  id: org.craftercms.blueprint.empty
-  name: Empty Blueprint
+  id: org.craftercms.blueprint.alexa
+  name: Alexa Blueprint
   tags:
     - blueprint
-    - website
+    - digital assistnat
+    - alexa
+    - aws
   version:
     major: 1
     minor: 0
     patch: 0
   description: |
-    Simple empty blueprint
+    Simple Alexa skill blueprint
   website:
-    name: Empty Blueprint
+    name: Alexa Skill Blueprint
     url: https://craftercms.org
   media:
     screenshots:
-      - title: Home Page
-        description: Screenshot of the homepage
+      - title: Alexa Test Console
+        description: Alexa skill and testing console
         url: /studio/static-assets/images/blueprints/empty/bp_empty.png
   developer:
     company:
-      name: Crafter Software
-      email: info@craftersoftware.com
-      url: https://craftersoftware.com/
+      name: Ethan Vertal
+      email: 
+      url: https://www.linkedin.com/in/ethan-vertal-a491aa1b9/
   build:
-    id: c3d2a5444e6a24b5e0481d6ba87901d0b02716c8
+    id: cafebabe4e6a24b5e0481d6ba87901d0b02716c8
     date: 2019-01-23T00:00:00Z
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
   crafterCmsVersions:
-    - major: 3
-      minor: 1
-      patch: 1
+    - major: 4
+      minor: 0
+      patch: 0
   crafterCmsEditions:
     - community
     - enterprise
