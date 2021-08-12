@@ -1,14 +1,14 @@
-<#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#import "/templates/system/common/ice.ftl" as studio />
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-        <#import "/templates/web/common/head.ftl" />
+        <#include  "/templates/web/common/head.ftl" />
 	</head>
 	<body>
 		<div id="browser" class="container" v-cloak>
 			<div class="row">
-				<#import "/templates/web/common/header.ftl" />
+				<#include  "/templates/web/common/header.ftl" />
 				<div class="col-md-2">
 					<div class="panel panel-default">
 						<div class="panel-heading"><h2 class="panel-title">Items</h2></div>
@@ -116,7 +116,7 @@
 				}
 			});
 		</script>
-		<#import "/templates/web/common/scripts.ftl" />
-		<@studio.toolSupport/>
+		<#include "/templates/web/common/scripts.ftl" />
+		<@studio.initPageBuilder/>
 	</body>
 </html>
