@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/factbrowser</content-type>
+	<display-template>/templates/web/item-explorer.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>4d46</objectGroupId>
+	<objectId>4d465f69-21f5-5ae8-b351-ba3b42fe2c38</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>fact-browser</folder-name>
+	<internal-name>Fact Browser</internal-name>
+	<navLabel>Fact Browser</navLabel>
+	<localeCode>en</localeCode>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2021-08-12T21:18:19.827Z</createdDate>
+	<createdDate_dt>2021-08-12T21:18:19.827Z</createdDate_dt>
+	<lastModifiedDate>2021-08-12T21:18:19.827Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-12T21:18:19.827Z</lastModifiedDate_dt>
+</page>
