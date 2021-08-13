@@ -46,7 +46,7 @@
 								</thead>
 								<tbody>
 									<tr v-for="(value, field) in selectedItem">
-										<td>{{ field }} : {{selectedItem}}</td>
+										<td>{{ field }} : {{selectedItem.craftercms.path}}</td>
 										<td v-if="field == 'facts_o'"
 										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
 										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
