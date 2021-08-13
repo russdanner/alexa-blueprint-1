@@ -58,7 +58,8 @@
 										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
 										    v-bind:data-craftercms-field-id="field">
 										  <ol v-for="(k, v) in value">
-										    <li>{{k.detail_html}}</li>
+										    <li><h3>{{k.fact_html}}</h3>
+										    {{k.detail_html}}</li>
 										  </ol>
 										</td>
 										<td v-else-if="Array.isArray(value)"
