@@ -1,6 +1,6 @@
-<content-type name="/page/entry" is-wcm-type="true">
-	<label>Alexa Skill Testing Tool</label>
-	<form>/page/entry</form>
+<content-type name="/page/factbrowser" is-wcm-type="true">
+	<label>Fact Browser</label>
+	<form>/page/factbrowser</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>
 	<file-extension>xml</file-extension>
@@ -10,9 +10,4 @@
 	<quickCreatePath></quickCreatePath>
 	<noThumbnail>true</noThumbnail>
 	<image-thumbnail></image-thumbnail>
-	<paths>
-		<includes>
-			<pattern>^HIDDEN</pattern>
-		</includes>
-	</paths>
 </content-type>

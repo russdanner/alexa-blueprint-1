@@ -6,22 +6,22 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<placeInNav>false</placeInNav>
 	<file-name>index.xml</file-name>
-	<internal-name>Setup Documentation</internal-name>
+	<internal-name>Setup Instructions</internal-name>
 	<orderDefault_f>-1</orderDefault_f>
 	<objectGroupId>8d7f</objectGroupId>
 	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
-	<folder-name>docs</folder-name>
+	<folder-name>setup-instructions</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-08-11T19:52:33.933Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-11T19:52:33.933Z</lastModifiedDate_dt>
-	<navLabel>Setup Documentation</navLabel>
-	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Alexa Blueprint&lt;/strong&gt;&lt;/h1&gt;
+	<lastModifiedDate>2021-08-12T22:25:34.360Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-12T22:25:34.360Z</lastModifiedDate_dt>
+	<navLabel>Setup Instructions</navLabel>
+	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Alexa Fact Skill Setup&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;This blueprint is intended to show a use case of Crafter CMS with Alexa.&lt;/span&gt;&lt;/p&gt;
 &lt;div class="mce-toc"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nns8"&gt;Alexa Blueprint&lt;/a&gt;
+&lt;li&gt;&lt;a href="#mcetoc_1fcrc7nns8"&gt;Alexa Fact Skill Setup&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#mcetoc_1fcrc7nns9"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#mcetoc_1fcrc7nnsa"&gt;Set up&lt;/a&gt;&lt;/li&gt;
@@ -49,13 +49,13 @@
 &lt;h3 id="mcetoc_1fcrc7nnsc"&gt;&lt;strong&gt;Replicate by copying Json&lt;/strong&gt;&lt;/h3&gt;
 &lt;h4&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;In the Alexa Developer Console (&lt;a href="https://developer.amazon.com/alexa/console/ask"&gt;https://developer.amazon.com/alexa/console/ask&lt;/a&gt;), you should log in with a corporate account. If you don&amp;rsquo;t have one, setting it up is simple. Just enter the information required on the sign up page.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;&lt;img src="/static-assets/pages/images/image4.png" /&gt;Step 2&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;After signing up, navigate to create a new skill. Enter a name for your skill and the Custom option should be selected. Scroll down to step 2 and select Provision your own for the backend resources. This makes it so that Alexa will be able to communicate with the blueprint site.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="/static-assets/pages/images/image7.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;&lt;img src="/static-assets/pages/images/image9.png" /&gt;Step 3&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;After creating the skill, select the Hello World template. This is a plain skill with a basic built-in intent.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;&lt;img src="/static-assets/pages/images/image5.png" /&gt;&lt;/span&gt;&lt;/p&gt;
