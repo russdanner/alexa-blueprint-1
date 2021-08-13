@@ -46,21 +46,23 @@
 								</thead>
 								<tbody>
 									<tr v-for="(value, field) in selectedItem">
-										<td>{{ field }} : {{selectedItem.craftercms.path}}</td>
+										<td><b>{{ field }}</b></td>
 										<td v-if="field == 'facts_o'"
-										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
-										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
+										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
 										    v-bind:data-craftercms-field-id="field">
 										  <ol v-for="(k, v) in value">
 										    <li>{{k.detail_html}}</li>
 										  </ol>
 										</td>
 										<td v-else-if="Array.isArray(value)"
-										     v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
-										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
+										     v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
 										    v-bind:data-craftercms-field-id="field">{{ value.join(', ') }}</td>
 										<td v-else 
-										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  v-bind:data-craftercms-model-path="selectedItem.itemUrl" v-bind:data-craftercms-field-id="field" >{{ value }}</td>
+										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
