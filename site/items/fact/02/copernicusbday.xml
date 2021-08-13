@@ -14,11 +14,11 @@
 	<factDay_s>19</factDay_s>
 	<facts_o item-list="true">	<item>	<fact_t>The 1st website was created.</fact_t>
 	<detail_t>The beginning of the Web as a publicly available service on the Internet arrived on August 6, 1991, when Berners-Lee published the first-ever website. Fittingly, the site was about the World Wide Web project, describing the Web and how to use it. Hosted at CERN on Berners-Lee’s NeXT computer, the site’s URL was http://info.cern.ch.</detail_t>
-	<fact_html>&lt;p&gt;Nicolaus Copernicus was born.&lt;/p&gt;</fact_html>
-	<detail_html>&lt;p&gt;Astronomer Nicolaus Copernicus was born in Torun, Poland. He is considered the founder of modern astronomy as he theorized that the sun, and not Earth, was the center of the solar system.&lt;/p&gt;</detail_html>
+	<fact_html>&lt;p class="excited"&gt;Nicolaus Copernicus was born.&lt;/p&gt;</fact_html>
+	<detail_html>&lt;p class="excited"&gt;Astronomer Nicolaus Copernicus was born in Torun, Poland. He is considered the founder of modern astronomy as he theorized that the sun, and not Earth, was the center of the solar system.&lt;/p&gt;</detail_html>
 	</item></facts_o>
 	<createdDate>2020-08-26T03:57:16.563Z</createdDate>
 	<createdDate_dt>2020-08-26T03:57:16.563Z</createdDate_dt>
-	<lastModifiedDate>2021-08-09T19:12:41.743Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-09T19:12:41.743Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-08-13T14:32:19.678Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-13T14:32:19.678Z</lastModifiedDate_dt>
 </component>

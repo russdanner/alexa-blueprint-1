@@ -1,4 +1,4 @@
-<#import "/templates/system/common/ice.ftl" as studio />
+<#import "/templates/system/common/crafter.ftl" as crafter />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,6 +6,7 @@
         <#include  "/templates/web/common/head.ftl" />
 	</head>
 	<body>
+        <@crafter.body_top/> 
 		<#include  "/templates/web/common/header.ftl" />
 
 		<div id="browser" class="container">
@@ -25,7 +26,13 @@
 						<div class="panel-heading"><h2 class="panel-title">{{ selectedType.label }} ({{ items.total.value }})</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
-								<a href="#" class="list-group-item" v-for="item in items.hits" v-on:click="setItem(item)">{{ item.craftercms["label"] }}<span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span></a>
+								<a href="#" 
+								   class="list-group-item" v-for="item in items.hits" v-on:click="setItem(item)"
+								   v-bind:data-craftercms-model-id="item.craftercms.id"  
+								   v-bind:data-craftercms-model-path="item.craftercms.path" 
+										    >{{ item.craftercms["label"] }}
+										    <span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
+							    </a>
 							</div>
 						</div>
 					</div>
@@ -33,7 +40,10 @@
 				<div class="col-md-6">
 					<div class="panel panel-default" v-if="selectedItem">
 						<div class="panel-heading"><h2 class="panel-title">Details</h2></div>
-						<div class="panel-body" v-bind:data-studio-component-path="selectedItem.itemUrl" v-bind:data-studio-component="selectedItem.itemUrl" data-studio-ice="" v-bind:data-studio-ice-path="selectedItem.itemUrl">
+						<div class="panel-body">
+
+
+
 							<table class="table">
 								<thead>
 									<tr>
@@ -43,16 +53,24 @@
 								</thead>
 								<tbody>
 									<tr v-for="(value, field) in selectedItem">
-										<td>{{ field }}</td>
-										<td v-if="field == 'photo' || field == 'featuredImage'"><img class="img-responsive img-rounded" v-bind:src="value"/></td>
-										<td v-else-if="field == 'date'">{{ new Date(value).toDateString() }}</td>
-										<td v-else-if="field == 'facts_o'">
+										<td><b>{{ field }}</b></td>
+										<td v-if="field == 'facts_o'"
+										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field">
 										  <ol v-for="(k, v) in value">
-										    <li>{{k.detail_html}}</li>
+										    <li><h3>{{k.fact_html}}</h3>
+										    {{k.detail_html}}</li>
 										  </ol>
 										</td>
-										<td v-else-if="Array.isArray(value)">{{ value.join(', ') }}</td>
-										<td v-else>{{ value }}</td>
+										<td v-else-if="Array.isArray(value)"
+										     v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field">{{ value.join(', ') }}</td>
+										<td v-else 
+										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
@@ -105,6 +123,6 @@
 			});
 		</script>
 		<#include "/templates/web/common/scripts.ftl" />
-		<@studio.initPageBuilder/>
+        <@crafter.body_bottom/>
 	</body>
 </html>
