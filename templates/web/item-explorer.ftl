@@ -55,7 +55,9 @@
 										  </ol>
 										</td>
 										<td v-else-if="Array.isArray(value)">{{ value.join(', ') }}</td>
-										<td v-else v-bind:data-craftercms-model-id="selectedItem.itemUrl"  v-bind:data-craftercms-model-path="selectedItem.itemUrl" v-bind:data-craftercms-field-id="field" >{{ value }}</td>
+										<td v-else v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
+										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
+										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
