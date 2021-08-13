@@ -22,10 +22,10 @@
 				</div>
 				<div class="col-md-4">
 					<div class="panel panel-default" v-if="selectedType">
-						<div class="panel-heading"><h2 class="panel-title">{{ selectedType.label }} ({{ items.total }})</h2></div>
+						<div class="panel-heading"><h2 class="panel-title">{{ selectedType.label }} ({{ items.total.value }})</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
-								<a href="#" class="list-group-item" v-for="item in items.items" v-on:click="setItem(item)">{{ item[selectedType.labelField] }}<span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span></a>
+								<a href="#" class="list-group-item" v-for="item in items.hits" v-on:click="setItem(item)">{{ item.craftercms["label"] }}<span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span></a>
 							</div>
 						</div>
 					</div>
@@ -46,11 +46,10 @@
 										<td>{{ field }}</td>
 										<td v-if="field == 'photo' || field == 'featuredImage'"><img class="img-responsive img-rounded" v-bind:src="value"/></td>
 										<td v-else-if="field == 'date'">{{ new Date(value).toDateString() }}</td>
-										<td v-else-if="field == 'categories' || field == 'tags'">
-											<span class="label label-primary" style="margin-right:5px" v-for="val in value">{{ val.label }}</span>
-										</td>
-										<td v-else-if="field == 'body' || field == 'biography'">
-											<div v-html="value"></div>
+										<td v-else-if="field == 'facts_o'">
+										  <ol v-for="(k, v) in value">
+										    <li>{{k.detail_html}}</li>
+										  </ol>
 										</td>
 										<td v-else-if="Array.isArray(value)">{{ value.join(', ') }}</td>
 										<td v-else>{{ value }}</td>
