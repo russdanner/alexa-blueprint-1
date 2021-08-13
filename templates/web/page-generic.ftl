@@ -21,10 +21,9 @@
         <#include  "/templates/web/common/header.ftl" />
 
         <div id="browser" class="container">
-            <div class="row">
+            <@crafter.div $field="content_html"class="row" >
                  ${contentModel.content_html?replace("[INTERACTION_JSON]", interactionModelJson)}
-                     
-            </div>
+            </@crafter.div>
         </div>
         <#include "/templates/web/common/help-modal.ftl" />        
 
