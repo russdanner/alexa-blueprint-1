@@ -47,15 +47,20 @@
 								<tbody>
 									<tr v-for="(value, field) in selectedItem">
 										<td>{{ field }}</td>
-										<td v-if="field == 'photo' || field == 'featuredImage'"><img class="img-responsive img-rounded" v-bind:src="value"/></td>
-										<td v-else-if="field == 'date'">{{ new Date(value).toDateString() }}</td>
-										<td v-else-if="field == 'facts_o'">
+										<td v-if="field == 'facts_o'"
+										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
+										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
+										    v-bind:data-craftercms-field-id="field">
 										  <ol v-for="(k, v) in value">
 										    <li>{{k.detail_html}}</li>
 										  </ol>
 										</td>
-										<td v-else-if="Array.isArray(value)">{{ value.join(', ') }}</td>
-										<td v-else v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
+										<td v-else-if="Array.isArray(value)"
+										     v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
+										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
+										    v-bind:data-craftercms-field-id="field">{{ value.join(', ') }}</td>
+										<td v-else 
+										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
 										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
 										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
 									</tr>
