@@ -60,9 +60,7 @@
 										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
 										    v-bind:data-craftercms-field-id="field">{{ value.join(', ') }}</td>
 										<td v-else 
-										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  
-										    v-bind:data-craftercms-model-path="selectedItem.itemUrl" 
-										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
+										    v-bind:data-craftercms-model-id="selectedItem.itemUrl"  v-bind:data-craftercms-model-path="selectedItem.itemUrl" v-bind:data-craftercms-field-id="field" >{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
