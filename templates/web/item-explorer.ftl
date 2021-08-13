@@ -1,4 +1,4 @@
-<#import "/templates/system/common/ice.ftl" as studio />
+<#import "/templates/system/common/crafter.ftl" as crafter />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,6 +6,7 @@
         <#include  "/templates/web/common/head.ftl" />
 	</head>
 	<body>
+        <@crafter.body_top/> 
 		<#include  "/templates/web/common/header.ftl" />
 
 		<div id="browser" class="container">
@@ -122,6 +123,6 @@
 			});
 		</script>
 		<#include "/templates/web/common/scripts.ftl" />
-		<@studio.initPageBuilder/>
+        <@crafter.body_bottom/>
 	</body>
 </html>
