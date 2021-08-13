@@ -33,7 +33,7 @@
 				<div class="col-md-6">
 					<div class="panel panel-default" v-if="selectedItem">
 						<div class="panel-heading"><h2 class="panel-title">Details</h2></div>
-						<div class="panel-body" v-bind:data-craftercms-model-id="selectedItem.itemUrl" data-studio-ice="" v-bind:data-craftercms-model-path="selectedItem.itemUrl">
+						<div class="panel-body">
 
 
 
@@ -55,7 +55,9 @@
 										  </ol>
 										</td>
 										<td v-else-if="Array.isArray(value)">{{ value.join(', ') }}</td>
-										<td v-else>{{ value }}</td>
+										<td v-bind:data-craftercms-model-id="selectedItem.itemUrl" 
+										    v-bind:data-craftercms-model-path="selectedItem.itemUrl"   
+										    v-bind:data-craftercms-field-id="{{field}}l" v-else>{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
