@@ -30,7 +30,7 @@
   </div>
 </nav>
 <div class="page-header">
-    <h1>Alexa Fact Skill
+    <h1> Alexa Fact Skill
         <small>
             <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#help-modal"/>
         </small>
