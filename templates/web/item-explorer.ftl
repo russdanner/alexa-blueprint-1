@@ -22,7 +22,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="panel panel-default" v-if="selectedType">
-						<div class="panel-heading"><h2 class="panel-title">{{ selectedType.label }} ({{ items.total.value }})</h2></div>
+						<div class="panel-heading"><h2 class="panel-title">{{ selectedType.label }} ({{ items.total }})</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
 								<a href="#" 
