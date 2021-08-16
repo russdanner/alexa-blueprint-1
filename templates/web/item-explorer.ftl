@@ -27,8 +27,7 @@
 							<div class="list-group">
 								<a href="#" 
 								   class="list-group-item" v-for="item in items.hits" v-on:click="setItem(item)"
-								   v-bind:data-studio-ice-path="item.craftercms.path" 
-										    >{{ item.craftercms["label"] }}
+								   v-bind:data-studio-ice-path="item.craftercms.path">{{ item.craftercms["label"] }}
 										    <span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
 							    </a>
 							</div>
