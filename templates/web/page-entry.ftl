@@ -13,7 +13,7 @@
             <div class="row">
 				<div class="col-md-12">
                      <a href="https://developer.amazon.com/alexa/console/ask" target="new">
-                        <img src="/static-assets/app/amazon-alexa.png"  style="margin-left: auto; margin-right: auto;>
+                        <img src="/static-assets/app/amazon-alexa.png"  style="margin-left: auto; margin-right: auto;">
                     </a>
 				</div>
             </div>
