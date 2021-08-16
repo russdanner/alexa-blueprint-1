@@ -1,4 +1,4 @@
-<#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#import "/templates/system/common/crafter.ftl" as crafter />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,6 +6,7 @@
         <#include  "/templates/web/common/head.ftl" />
 	</head>
 	<body>
+        <@crafter.body_top/> 
 		<#include  "/templates/web/common/header.ftl" />
 
 		<div id="browser" class="container">
@@ -15,27 +16,22 @@
 						<div class="panel-heading"><h2 class="panel-title">Month</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
-								<a href="#" class="list-group-item" v-for="type in types" v-on:click="setType(type)">
-								  {{ type.label }}
-								  <span v-if="type == selectedType" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
-								</a>
+								<a href="#" class="list-group-item" v-for="type in types" v-on:click="setType(type)">{{ type.label }}<span v-if="type == selectedType" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span></a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="panel panel-default" v-if="selectedType">
-						<div class="panel-heading">
-						  <h2 class="panel-title">{{ selectedType.label }} ({{ items.total.value }})</h2>
-						</div>
+						<div class="panel-heading"><h2 class="panel-title">{{ selectedType.label }} ({{ items.total.value }})</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
 								<a href="#" 
-								   class="list-group-item" 
-								   v-for="item in items.hits" 
-								   v-on:click="setItem(item)" 
-								   v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ item.craftercms["label"] }}
-								   <span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
+								   class="list-group-item" v-for="item in items.hits" v-on:click="setItem(item)"
+								   v-bind:data-craftercms-model-id="item.craftercms.id"  
+								   v-bind:data-craftercms-model-path="item.craftercms.path" 
+										    >{{ item.craftercms["label"] }}
+										    <span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
 							    </a>
 							</div>
 						</div>
@@ -45,7 +41,9 @@
 					<div class="panel panel-default" v-if="selectedItem">
 						<div class="panel-heading"><h2 class="panel-title">Details</h2></div>
 						<div class="panel-body">
-						
+
+
+
 							<table class="table">
 								<thead>
 									<tr>
@@ -56,14 +54,23 @@
 								<tbody>
 									<tr v-for="(value, field) in selectedItem">
 										<td><b>{{ field }}</b></td>
-										<td v-if="field == 'facts_o'" v-bind:data-studio-ice-path="selectedItem.craftercms.path">
+										<td v-if="field == 'facts_o'"
+										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field">
 										  <ol v-for="(k, v) in value">
 										    <li><h3>{{k.fact_html}}</h3>
 										    {{k.detail_html}}</li>
 										  </ol>
 										</td>
-										<td v-else-if="Array.isArray(value)" v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value.join(', ') }}</td>
-										<td v-else v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value }}</td>
+										<td v-else-if="Array.isArray(value)"
+										     v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field">{{ value.join(', ') }}</td>
+										<td v-else 
+										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
+										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
+										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
@@ -116,6 +123,6 @@
 			});
 		</script>
 		<#include "/templates/web/common/scripts.ftl" />
-    	<@studio.toolSupport/>
+        <@crafter.body_bottom/>
 	</body>
 </html>
