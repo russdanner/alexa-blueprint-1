@@ -15,6 +15,7 @@
                      <a href="https://developer.amazon.com/alexa/console/ask" target="new">
                         <img src="/static-assets/app/amazon-alexa.png" >
                     </a>
+                    In order to use this tool you must log-in to your Alexa Developer account and follow the <a href="/">documentation</a> to set up an Alexa Skill.
 				</div>
             </div>
         </div>
