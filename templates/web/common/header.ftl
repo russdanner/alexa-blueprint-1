@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="/">Testing Console</a>
@@ -30,7 +30,7 @@
   </div>
 </nav>
 <div class="page-header">
-    <h1>Alexa Fact Skill
+    <h1> Alexa Fact Skill
         <small>
             <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#help-modal"/>
         </small>

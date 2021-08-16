@@ -1,4 +1,4 @@
-<#import "/templates/system/common/crafter.ftl" as crafter />
+<#import "/templates/system/common/cstudio-support.ftl" as studio />
 
 
 <!DOCTYPE html>
@@ -7,22 +7,21 @@
         <#include  "/templates/web/common/head.ftl" />
     </head>
     <body>
-        <@crafter.body_top/>    
-    
         <#include  "/templates/web/common/header.ftl" />
 
         <div id="browser" class="container">
             <div class="row">
-
-                 <a href="https://developer.amazon.com/alexa/console/ask" target="new">
-                    <img src="/static-assets/app/amazon-alexa.png">
-                </a>
+				<div class="col-md-12">
+                     <a href="https://developer.amazon.com/alexa/console/ask" target="new">
+                        <img src="/static-assets/app/amazon-alexa.png"  style="margin-left: auto; margin-right: auto; width: 8em">
+                    </a>
+				</div>
             </div>
         </div>
         <#include "/templates/web/common/help-modal.ftl" />        
 
         <#include "/templates/web/common/scripts.ftl" />
-        <@crafter.body_bottom/>
+	    <@studio.toolSupport/>
     </body>
 </html>
 

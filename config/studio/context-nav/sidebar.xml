@@ -104,6 +104,17 @@
                                     </params>
                                 </modulehook>
 
+                                <!-- Facts -->
+                                <modulehook>
+                                    <name>wcm-root-folder</name>
+                                    <params>
+                                        <label>Facts</label>
+                                        <path>/site/items/fact</path>
+                                        <showRootItem>false</showRootItem>
+                                        <onClick>preview</onClick>
+                                    </params>
+                                </modulehook>
+                                
                                 <!-- Site IA Pages -->
                                 <modulehook>
                                     <name>wcm-root-folder</name>
