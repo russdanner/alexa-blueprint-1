@@ -24,7 +24,7 @@ if(!parsedReq.request.intent.slots.equals(null)) {
         } 
         catch (err) {
             logger.info("We broke. This is the error for intent ("+intent+"): " + err)
-            alexaResponse = "<speak>There was an error with the request for intent ("+intent+"): " + err+</speak>"
+            alexaResponse = "<speak>There was an error with the request for intent ("+intent+"): " + err+"</speak>"
         }
     } 
     
