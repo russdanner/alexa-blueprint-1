@@ -11,7 +11,7 @@
 
         <div id="browser" class="container">
             <div class="row">
-				<div class="col-md-12"  style="margin-left: auto; margin-right: auto;">
+				<div class="col-md-12"  style="margin-left: 30%; margin-right: auto;">
                      <a href="https://developer.amazon.com/alexa/console/ask" target="new">
                         <img src="/static-assets/app/amazon-alexa.png" >
                     </a>
