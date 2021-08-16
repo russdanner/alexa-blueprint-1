@@ -41,9 +41,7 @@
 					<div class="panel panel-default" v-if="selectedItem">
 						<div class="panel-heading"><h2 class="panel-title">Details</h2></div>
 						<div class="panel-body">
-
-
-
+						
 							<table class="table">
 								<thead>
 									<tr>
@@ -54,15 +52,13 @@
 								<tbody>
 									<tr v-for="(value, field) in selectedItem">
 										<td><b>{{ field }}</b></td>
-										<td v-if="field == 'facts_o'"
-										    v-bind: v-bind:data-studio-ice-path="selectedItem.craftercms.path">
+										<td v-if="field == 'facts_o'" v-bind:data-studio-ice-path="selectedItem.craftercms.path">
 										  <ol v-for="(k, v) in value">
 										    <li><h3>{{k.fact_html}}</h3>
 										    {{k.detail_html}}</li>
 										  </ol>
 										</td>
-										<td v-else-if="Array.isArray(value)"
-										    v-bind:v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value.join(', ') }}</td>
+										<td v-else-if="Array.isArray(value)" v-bind:v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value.join(', ') }}</td>
 										<td v-else v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value }}</td>
 									</tr>
 								</tbody>
