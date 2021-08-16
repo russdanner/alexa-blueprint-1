@@ -7,7 +7,6 @@
         <#include  "/templates/web/common/head.ftl" />
     </head>
     <body>
-        <#include  "/templates/web/common/header.ftl" />
 
         <div id="browser" class="container">
             <div class="row">
