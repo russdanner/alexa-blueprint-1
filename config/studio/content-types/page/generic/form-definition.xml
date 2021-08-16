@@ -140,7 +140,7 @@
 				<field>
 					<type>rte-tinymce5</type>
 					<id>content_html</id>
-					<iceId></iceId>
+					<iceId>body</iceId>
 					<title>Content</title>
 					<description></description>
 					<defaultValue></defaultValue>

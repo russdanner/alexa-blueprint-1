@@ -1,8 +1,8 @@
+<#import "/templates/system/common/cstudio-support.ftl" as studio />
+
 <#assign "interactionModelJson">
     <iframe src="/static-assets/app/interaction-model.json" width="80%"></iframe>
 </#assign>
-
-<#import "/templates/system/common/crafter.ftl" as crafter />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,17 +18,16 @@
         </style>
     </head>
     <body>
-        <@crafter.body_top/>    
         <#include  "/templates/web/common/header.ftl" />
 
-        <div id="browser" class="container">
-            <@crafter.div $field="content_html"class="row" >
+        <div id="browser" class="container" <@studio.iceAttr iceGroup="body"/>>
+            <div $field="content_html"class="row" >
                  ${contentModel.content_html?replace("[INTERACTION_JSON]", interactionModelJson)}
-            </@crafter.div>
+            </div>
         </div>
         <#include "/templates/web/common/help-modal.ftl" />        
 
         <#include "/templates/web/common/scripts.ftl" />
-        <@crafter.body_bottom/>
+    	<@studio.toolSupport/>
     </body>
 </html>
