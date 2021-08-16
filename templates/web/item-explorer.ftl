@@ -53,9 +53,7 @@
 									<tr v-for="(value, field) in selectedItem">
 										<td><b>{{ field }}</b></td>
 										<td v-if="field == 'facts_o'"
-										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
-										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
-										    v-bind:data-craftercms-field-id="field">
+										    v-bind:data-studio-ice-path="selectedItem.craftercms.path" 
 										  <ol v-for="(k, v) in value">
 										    <li><h3>{{k.fact_html}}</h3>
 										    {{k.detail_html}}</li>
