@@ -34,7 +34,7 @@ if(date != "null") {
         alexaResponse = fact.getFacts(siteItemService, session, date, null)
     } catch (err) {
         logger.info("We broke. This is the error: " + err)
-        alexaResponse = "<speak>There was an error with the request</speak>"
+        alexaResponse = "<speak>There was an error with the request:"+err+"</speak>"
     }
 } 
     
