@@ -20,10 +20,10 @@
     <body>
         <#include  "/templates/web/common/header.ftl" />
 
-        <div id="browser" class="container">
-            <@crafter.div $field="content_html"class="row" >
+        <div id="browser" class="container" <@studio.iceAttr iceGroup="body"/>>
+            <div $field="content_html"class="row" >
                  ${contentModel.content_html?replace("[INTERACTION_JSON]", interactionModelJson)}
-            </@crafter.div>
+            </div>
         </div>
         <#include "/templates/web/common/help-modal.ftl" />        
 
