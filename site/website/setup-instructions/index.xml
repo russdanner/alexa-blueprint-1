@@ -13,11 +13,10 @@
 	<folder-name>setup-instructions</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-08-16T19:58:49.065Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-16T19:58:49.065Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-08-16T22:54:29.769Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-16T22:54:29.769Z</lastModifiedDate_dt>
 	<navLabel>Setup Instructions</navLabel>
 	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Setting up your own Alexa Skills with Crafter CMS&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;To replicate this demo site, follow these instructions after downloading the &lt;a href="https://github.com/craftercms/alexa-blueprint"&gt;Crafter Alexa Blueprint&lt;/a&gt; into your Crafter CMS deployment.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
 &lt;div class="mce-toc"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;ul&gt;
