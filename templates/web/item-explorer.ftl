@@ -15,7 +15,9 @@
 						<div class="panel-heading"><h2 class="panel-title">Month</h2></div>
 						<div class="panel-body">
 							<div class="list-group">
-								<a href="#" class="list-group-item" v-for="type in types" v-on:click="setType(type)">{{ type.label }}<span v-if="type == selectedType" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span></a>
+								<a href="#" class="list-group-item" v-for="type in types" v-on:click="setType(type)">{{ type.label }}
+								  <span v-if="type == selectedType" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
+								</a>
 							</div>
 						</div>
 					</div>
