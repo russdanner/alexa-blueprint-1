@@ -8,6 +8,8 @@
 	<body>
 		<#include  "/templates/web/common/header.ftl" />
 
+ data-studio-ice="body" data-studio-ice-label="body" data-studio-ice-path="/site/website/setup-instructions/index.xml"
+ 
 		<div id="browser" class="container">
 			<div class="row">
 				<div class="col-md-2">
@@ -27,8 +29,7 @@
 							<div class="list-group">
 								<a href="#" 
 								   class="list-group-item" v-for="item in items.hits" v-on:click="setItem(item)"
-								   v-bind:data-craftercms-model-id="item.craftercms.id"  
-								   v-bind:data-craftercms-model-path="item.craftercms.path" 
+								    v-bind:data-studio-ice-path="selectedItem.craftercms.path" 
 										    >{{ item.craftercms["label"] }}
 										    <span v-if="item == selectedItem" class="badge"><span class="glyphicon glyphicon-chevron-right"/></span>
 							    </a>
@@ -54,22 +55,15 @@
 									<tr v-for="(value, field) in selectedItem">
 										<td><b>{{ field }}</b></td>
 										<td v-if="field == 'facts_o'"
-										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
-										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
-										    v-bind:data-craftercms-field-id="field">
+										    v-bind: v-bind:data-studio-ice-path="selectedItem.craftercms.path">
 										  <ol v-for="(k, v) in value">
 										    <li><h3>{{k.fact_html}}</h3>
 										    {{k.detail_html}}</li>
 										  </ol>
 										</td>
 										<td v-else-if="Array.isArray(value)"
-										     v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
-										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
-										    v-bind:data-craftercms-field-id="field">{{ value.join(', ') }}</td>
-										<td v-else 
-										    v-bind:data-craftercms-model-id="selectedItem.craftercms.id"  
-										    v-bind:data-craftercms-model-path="selectedItem.craftercms.path" 
-										    v-bind:data-craftercms-field-id="field" >{{ value }}</td>
+										    v-bind:v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value.join(', ') }}</td>
+										<td v-else v-bind:data-studio-ice-path="selectedItem.craftercms.path">{{ value }}</td>
 									</tr>
 								</tbody>
 							</table>
