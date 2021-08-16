@@ -8,8 +8,6 @@
 	<body>
 		<#include  "/templates/web/common/header.ftl" />
 
- data-studio-ice="body" data-studio-ice-label="body" data-studio-ice-path="/site/website/setup-instructions/index.xml"
- 
 		<div id="browser" class="container">
 			<div class="row">
 				<div class="col-md-2">
