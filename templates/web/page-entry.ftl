@@ -11,10 +11,11 @@
 
         <div id="browser" class="container">
             <div class="row">
-
-                 <a href="https://developer.amazon.com/alexa/console/ask" target="new">
-                    <img src="/static-assets/app/amazon-alexa.png">
-                </a>
+				<div class="col-md-2">
+                     <a href="https://developer.amazon.com/alexa/console/ask" target="new">
+                        <img src="/static-assets/app/amazon-alexa.png">
+                    </a>
+				</div>
             </div>
         </div>
         <#include "/templates/web/common/help-modal.ftl" />        
