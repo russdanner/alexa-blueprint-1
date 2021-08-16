@@ -110,7 +110,7 @@
                                     <params>
                                         <label>Facts</label>
                                         <path>/site/items/fact</path>
-                                        <showRootItem>true</showRootItem>
+                                        <showRootItem>false</showRootItem>
                                         <onClick>preview</onClick>
                                     </params>
                                 </modulehook>
