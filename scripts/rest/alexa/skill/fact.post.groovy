@@ -40,7 +40,7 @@ if(date != "null") {
     
 if(intent.equals("Search")) {
     try {
-         reqText = params.q.replaceAll("_", " ")
+         def reqText = term.replaceAll("_", " ")
          if(fact.sessionMap){
             alexaResponse = fact.getFactDetailsByMap(session, reqText)
          } else {
