@@ -1,4 +1,4 @@
-<#import "/templates/system/common/crafter.ftl" as crafter />
+<#import "/templates/system/common/cstudio-support.ftl" as studio />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,6 @@
         <#include  "/templates/web/common/head.ftl" />
 	</head>
 	<body>
-        <@crafter.body_top/> 
 		<#include  "/templates/web/common/header.ftl" />
 
 		<div id="browser" class="container">
@@ -123,6 +122,6 @@
 			});
 		</script>
 		<#include "/templates/web/common/scripts.ftl" />
-        <@crafter.body_bottom/>
+    	<@studio.toolSupport/>
 	</body>
 </html>
