@@ -11,12 +11,12 @@
 
         <div id="browser" class="container">
             <div class="row">
-				<div class="col-md-6"  style="margin-left: 30%; margin-right: auto;">
+				<div class="col-md-6" >
                      <a href="https://developer.amazon.com/alexa/console/ask" target="new">
                         <img src="/static-assets/app/amazon-alexa.png" >
                     </a>
 				</div>
-				<div class="col-md-6"  style="margin-left: 30%; margin-right: auto;">
+				<div class="col-md-6">
 				    <p>In order to use this tool you must log-in to your Alexa Developer account and 
                        follow the <a href="/setup-instructions">documentation</a> to set up an Alexa Skill.</p>
                 </div>
