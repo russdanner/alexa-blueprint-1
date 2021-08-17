@@ -16,7 +16,7 @@
                         <img src="/static-assets/app/amazon-alexa.png" >
                     </a>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" stye="align: center; v-align:center;">
 				    <p>In order to use this tool you must log-in to your Alexa Developer account and 
                        follow the <a href="/setup-instructions">documentation</a> to set up an Alexa Skill.</p>
                 </div>
