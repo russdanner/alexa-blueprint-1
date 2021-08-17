@@ -13,8 +13,8 @@
 	<folder-name>setup-instructions</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-08-16T22:54:29.769Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-16T22:54:29.769Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-08-17T04:11:03.956Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-17T04:11:03.956Z</lastModifiedDate_dt>
 	<navLabel>Setup Instructions</navLabel>
 	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Setting up your own Alexa Skills with Crafter CMS&lt;/strong&gt;&lt;/h1&gt;
 &lt;div class="mce-toc"&gt;
@@ -65,7 +65,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;&lt;img src="/static-assets/pages/images/image8.png" /&gt;Step 5&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;The next step is to set up your endpoint. Navigate to Custom &amp;gt; Interaction Model &amp;gt; Endpoint. Select the https option and enter your endpoint. It should look something like:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://website.com/api/alexa/fact.json?crafterSite=siteName"&gt;&lt;span style="font-weight: 400;"&gt;https://website.com/api/alexa/fact.json?crafterSite=siteName&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;&lt;a href="https://website.com/api/alexa/skill/fact.json?crafterSite=siteName"&gt;https://website.com/api/alexa/skill/fact.json&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;Example: &lt;strong&gt;https://alexafacts.craftercloud.io/api/alexa/skill/fact.json&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Save the model with the Save Model button and then build it with the build model.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;You should get a notification like this when finished.&lt;/span&gt;&lt;/p&gt;
