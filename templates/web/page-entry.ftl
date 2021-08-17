@@ -17,8 +17,8 @@
                     </a>
 				</div>
 				<div class="col-md-6" stye="text-align: center;">
-				    <h3>To use the Alexa Testing tool you must log-in to your Alexa Developer account and 
-                       follow the <a href="/setup-instructions">documentation</a> to set up an Alexa Skill.<h3>
+				    <h3>To use the Alexa Skill Testing Tool you will need to sign-in to your Alexa Developer account and 
+                       follow the <a href="/setup-instructions">documentation</a> to set up and connect your Alexa Skill.<h3>
                 </div>
             </div>
         </div>
