@@ -144,7 +144,7 @@
         </display-in-widget-patterns>
     </repository>
     <contentMonitoring>
-        <monitor>
+        <!-- monitor>
             <name>Content Expiring Tomorrow</name>
             <query>expired_dt:[now+1d/d TO now+2d/d]</query>
             <paths>
@@ -195,6 +195,6 @@
                     <locale>en</locale>
                 </path>
             </paths>
-        </monitor>
+        </monitor -->
     </contentMonitoring>
 </site-config>
