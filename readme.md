@@ -1,10 +1,10 @@
 # Alexa Facts Skill Blueprint
 
-The Alexa Fact Skill Blueprint is an example of a simple headless content project that backs an Alexa Skill.
+The Alexa Fact Skill Blueprint is an example of a headless content project that backs an Alexa Skill.
 
 # Installation
 
-The blueprint can be installed to your site from the Crafter CMS Marketplace
+The blueprint can be installed to your site from the Crafter CMS Marketplace.
 
 # Setup
 
@@ -13,6 +13,7 @@ After the plugin has been installed you need setup your Alexa Skill.
 ## Prerequisites
 Must set up company account on Alexa Developer Console (https://developer.amazon.com/alexa/console/ask)
 Must be able to post to an HTTPS address
+
 ## Set up
 
 ### Alexa Developer Console
