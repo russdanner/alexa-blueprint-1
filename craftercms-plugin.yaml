@@ -25,7 +25,7 @@ plugin:
     screenshots:
       - title: Alexa Test Console
         description: Alexa skill and testing console
-        url: https://raw.githubusercontent.com/craftercms/alexa-blueprint/3-1-x/.crafter/screenshots/default.png
+        url: https://raw.githubusercontent.com/craftercms/alexa-blueprint/master/.crafter/screenshots/default.png
   developer:
     company:
       name: Crafter Software
