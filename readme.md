@@ -158,7 +158,7 @@ Alexa tell {invocation name} to {intent utterance}
 The invocation name in this Blueprint is “my crafter” and an example utterance would be “tell me what happened on {Date}”. Once a session, or conversation, is started, there is no need to re-invoke the skill. You can continue with only intent utterances until the dialogue is finished.
 
 ### REST Script
-In order to handle the request sent by Alexa, usage of a REST script is necessary. The request Alexa sends over is in JSON format, and the response should be in such format as well. To learn more about REST Scripts, refer here: https://docs.craftercms.org/en/3.1/developers/projects/engine/api/groovy-api.html
+In order to handle the request sent by Alexa, usage of a REST script is necessary. The request Alexa sends over is in JSON format, and the response should be in such format as well. To learn more about REST Scripts, refer here: https://docs.craftercms.org
 
 
 
